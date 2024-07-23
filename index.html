@@ -43,9 +43,9 @@
                             <li class="trend-item"><a href="#" class="trend-item-link">Interior</a></li>
                         </ul>
                     </div>
-                    <h2 class="trend-new-title"><a href="#" class="trend-title-text">Сейчас в тренде: Сад на
+                    <h3 class="trend-new-title"><a href="#" class="trend-title-text">Сейчас в тренде: Сад на
                             подоконнике</a>
-                    </h2>
+                    </h3>
                 </div>
             </article>
 
@@ -56,9 +56,9 @@
                             <li class="trend-item"><a href="#" class="trend-item-link">Food</a></li>
                         </ul>
                     </div>
-                    <h2 class="trend-new-title"><a href="#" class="trend-title-text">Сыры на красивых картинках из
+                    <h3 class="trend-new-title"><a href="#" class="trend-title-text">Сыры на красивых картинках из
                             интернета: какие они на вкус?</a>
-                    </h2>
+                    </h3>
                 </div>
             </article>
 
@@ -70,9 +70,9 @@
                             <li class="trend-item"><a href="#" class="trend-item-link">Travel</a></li>
                         </ul>
                     </div>
-                    <h2 class="trend-new-title"><a href="#" class="trend-title-text">Собираемся в первых поход в
+                    <h3 class="trend-new-title"><a href="#" class="trend-title-text">Собираемся в первых поход в
                             горы</a>
-                    </h2>
+                    </h3>
                 </div>
             </article>
 
@@ -84,10 +84,10 @@
                             <li class="trend-item"><a href="#" class="trend-item-link">Health</a></li>
                         </ul>
                     </div>
-                    <h2 class="trend-new-title"><a href="#" class="trend-title-text">Сейчас в тренде: сколько витамина С
+                    <h3 class="trend-new-title"><a href="#" class="trend-title-text">Сейчас в тренде: сколько витамина С
                             в
                             лимонах?</a>
-                    </h2>
+                    </h3>
                 </div>
             </article>
         </div>
@@ -212,13 +212,13 @@
 
             <aside class="aside">
                 <section class="aside-seption">
-                    <h2 class="aside-title">Новые посты</h2>
+                    <h3 class="aside-title">Новые посты</h3>
                     <article class="sidebar">
                         <img class="sidebar-img" src="img/2.jpg" alt="Человек на пляже">
                         <div class="sidebar-text">
                             <time class="sidebar-date" datetime="2019-06-10">14 июня 2019</time>
-                            <h3 class="sidebar-title"><a href="#0" class="sidebar-title-text">10 мест, ради которых
-                                    стоит проснуться на рассвете</a></h3>
+                            <h4 class="sidebar-title"><a href="#0" class="sidebar-title-text">10 мест, ради которых
+                                    стоит проснуться на рассвете</a></h4>
                         </div>
                     </article>
 
@@ -226,8 +226,8 @@
                         <img class="sidebar-img" src="img/151.jpg" alt="Йога на пляже">
                         <div class="sidebar-text">
                             <time class="sidebar-date" datetime="2019-06-10">14 июня 2019</time>
-                            <h3 class="sidebar-title"><a href="#0" class="sidebar-title-text">Йога для домашних
-                                </a></h3>
+                            <h4 class="sidebar-title"><a href="#0" class="sidebar-title-text">Йога для домашних
+                                </a></h4>
                         </div>
                     </article>
 
@@ -235,8 +235,8 @@
                         <img class="sidebar-img" src="img/45.jpg" alt="Кресло и пианино">
                         <div class="sidebar-text">
                             <time class="sidebar-date" datetime="2019-06-10">14 июня 2019</time>
-                            <h3 class="sidebar-title"><a href="#0" class="sidebar-title-text">как мы превратили
-                                    классное место в балкон</a></h3>
+                            <h4 class="sidebar-title"><a href="#0" class="sidebar-title-text">как мы превратили
+                                    классное место в балкон</a></h4>
                         </div>
                     </article>
 
@@ -244,8 +244,8 @@
                         <img class="sidebar-img" src="img/501.jpg" alt="Обед на столе">
                         <div class="sidebar-text">
                             <time class="sidebar-date" datetime="2019-06-10">14 июня 2019</time>
-                            <h3 class="sidebar-title"><a href="#0" class="sidebar-title-text">Кулинарный подход
-                                    к науке</a></h3>
+                            <h4 class="sidebar-title"><a href="#0" class="sidebar-title-text">Кулинарный подход
+                                    к науке</a></h4>
                         </div>
                     </article>
 
@@ -253,8 +253,8 @@
                         <img class="sidebar-img" src="img/7.jpg" alt="Три девушки">
                         <div class="sidebar-text">
                             <time class="sidebar-date" datetime="2019-06-10">14 июня 2019</time>
-                            <h3 class="sidebar-title"><a href="#0" class="sidebar-title-text">лучшие прически для
-                                    распущенных волос</a></h3>
+                            <h4 class="sidebar-title"><a href="#0" class="sidebar-title-text">лучшие прически для
+                                    распущенных волос</a></h4>
                         </div>
                     </article>
 
@@ -323,10 +323,15 @@
             <h2 class="prices-title">Наши изделия</h2>
             <div class="wrapper-prices">
                 <article class="product">
-                    <img src="img/shop-item-desk1.jpg" alt="подушка" class="product-img">
+                    <picture>
+                        <source srcset="img/shop-item-desk1.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+                        <source srcset="img/shop-item-tablet1.jpg" media="(max-width: 640px)">
+                        <img src="img/shop-item-desk1.jpg" alt="подушка" class="product-img">
+                    </picture>
                     <div class="content-product">
                         <div class="product-text">
-                            <h2 class="product-title">Подушки на диван</h2>
+                            <h3 class="product-title">Подушки на диван</h3>
                             <p class="product-description">Набор из двух подушек с модными принтами. Видео о создании <a
                                     class="description-link" href="#">здесь.</a>
                             </p>
@@ -344,10 +349,15 @@
                 </article>
 
                 <article class="product">
-                    <img src="img/shop-item-desk2.jpg" alt="игрушка" class="product-img">
+                    <picture>
+                        <source srcset="img/shop-item-desk2.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+                        <source srcset="img/shop-item-tablet2.jpg" media="(max-width: 640px)">
+                        <img src="img/shop-item-desk2.jpg" alt="подушка" class="product-img">
+                    </picture>
                     <div class="content-product">
                         <div class="product-text">
-                            <h2 class="product-title">Кукла "Зайчик"</h2>
+                            <h3 class="product-title">Кукла "Зайчик"</h3>
                             <p class="product-description">Интерьерная рукодельная кукла «Зайчик», созданию которой
                                 посвящена <a class="description-link" href="#">весенняя серия постов</a> в блоге
                                 и несколько подкастов.
@@ -365,10 +375,15 @@
                 </article>
 
                 <article class="product">
-                    <img src="img/shop-item-desk3.jpg" alt="рамка" class="product-img">
+                    <picture>
+                        <source srcset="img/shop-item-desk3.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+                        <source srcset="img/shop-item-tablet3.jpg" media="(max-width: 640px)">
+                        <img src="img/shop-item-desk3.jpg" alt="подушка" class="product-img">
+                    </picture>
                     <div class="content-product">
                         <div class="product-text">
-                            <h2 class="product-title">Шестиугольная рамка</h2>
+                            <h3 class="product-title">Шестиугольная рамка</h3>
                             <p class="product-description">Необычная рамка для украшения дома из видео <a
                                     class="description-link" href="#">«Как сделать рамку из подручных средств за 30
                                     минут»</a>
