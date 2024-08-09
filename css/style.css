@@ -26,7 +26,8 @@ a {
 
 p,
 h2,
-h3 {
+h3,
+h4 {
     margin: 0;
 }
 
@@ -119,6 +120,10 @@ h3 {
     color: #fff;
     text-transform: uppercase;
     font-size: 45px;
+}
+
+.hamburger {
+    display: none;
 }
 
 /*============ TREND ===========*/
@@ -563,14 +568,18 @@ h3 {
     width: 30%;
     display: flex;
     flex-direction: column;
-    padding: 10px;
 }
 
 .content-product {
     flex-grow: 1;
-    outline: 2px solid #b59f5b;
-    outline-offset: 20px;
-    padding-top: 10px;
+    border: 2px solid #b59f5b;
+    padding: 20px 10px 10px;
+    margin-top: -15px;
+}
+
+.product-img {
+    padding: 0 10px;
+    width: 100%;
 }
 
 .product-text {
@@ -684,15 +693,23 @@ h3 {
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
+
     .menu {
-        background-image: url("../svg/hamburger.svg");
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: contain;
+        display: flex;
     }
 
-    .menu-item {
-        visibility: hidden;
+    .menu-list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger_icon {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
     }
 
     .trend {
@@ -701,6 +718,15 @@ h3 {
 
     .trend-new {
         width: calc(50% - 3.75px)
+    }
+
+    .wrapper {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+
+    .main {
+        margin-right: 37px;
     }
 
     .new {
@@ -712,12 +738,12 @@ h3 {
     }
 
     .new-img {
-        width: 90%;
+        width: 100%;
         padding-bottom: 10px;
     }
 
     .new-text {
-        width: 90%;
+        width: 100%;
         margin-left: 0;
     }
 
@@ -746,25 +772,36 @@ h3 {
 }
 
 @media (max-width: 640px) {
+
+    .header-content {
+        flex-direction: column-reverse;
+
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 5%;
+        display: inline-block;
+
+    }
+
+    .hamburger_icon {
+        width: 25px;
+        height: 25px;
+        fill: #fff;
+    }
+
     .logo {
-        position: relative;
-        top: 100px;
-        left: 35%;
+        padding-top: 150px;
     }
 
     .title {
         font-size: 26px;
+        padding-top: 10px;
     }
 
-    .menu {
-        background-image: url("../svg/hamburger.svg");
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .menu-item {
-        visibility: hidden;
+    .menu-list {
+        display: none;
     }
 
     .trend {
