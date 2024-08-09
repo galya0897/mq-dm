@@ -698,8 +698,8 @@ h4 {
         display: flex;
     }
 
-    .menu-item {
-        visibility: hidden;
+    .menu-list {
+        display: none;
     }
 
     .hamburger {
@@ -778,8 +778,21 @@ h4 {
 
     }
 
+    .hamburger {
+        position: absolute;
+        right: 5%;
+        display: inline-block;
+
+    }
+
+    .hamburger_icon {
+        width: 25px;
+        height: 25px;
+        fill: #fff;
+    }
+
     .logo {
-        padding-top: 100px;
+        padding-top: 150px;
     }
 
     .title {
@@ -787,15 +800,8 @@ h4 {
         padding-top: 10px;
     }
 
-    .menu {
-        background-image: url("../svg/hamburger.svg");
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .menu-item {
-        visibility: hidden;
+    .menu-list {
+        display: none;
     }
 
     .trend {
